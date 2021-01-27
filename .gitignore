@@ -1,7 +1,7 @@
 # vscode settings
 .vscode
 
-# local virtual environment
+# Local virtual environment
 venv
 
 # To-be-deleted files
