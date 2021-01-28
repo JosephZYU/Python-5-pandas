@@ -8,8 +8,23 @@
 
 # Concatenate - https://youtu.be/txMdrV1Ut64?t=2131 ⭐️ -> NO.08
 
+"""
+🧭 dtypes issues ⭐️ -> NO.09
 
-df['Hobbyist'].replace({'Yes': 1, 'No': 0})
+    1. df.dtypes -> check the ENTIRE df for potential conflicts 整体考察所有col的对应数据类型
+
+    2. na_values = ['NA', 'na', 'Missing'] when forming the dataframe 尽可能将作为string出现的Na类型批量替换成真正的NaN/None/np.nan
+
+        df = pd.read_csv(survey_source, na_values=na_values)  # index_col = 'Respondent' 优化做法是在读取时就清洗完毕！
+
+    3. Finally focus on the remaing text to replace manually 最后针对个别文本逐个替换
+
+        df['YearsCode'].replace({'Less than 1 year':'0', 'More than 50 years':'51'}, inplace=True)
+        df['YearsCodePro'].replace({'Less than 1 year':'0', 'More than 50 years':'51'}, inplace=True)
+
+
+"""
+# df['Hobbyist'].replace({'Yes': 1, 'No': 0})
 
 """
 String series:
