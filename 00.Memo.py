@@ -6,6 +6,16 @@
 
 df['Hobbyist'].replace({'Yes': 1, 'No': 0})
 
+"""
+String series:
+
+df[].str.contains()
+df[].str.replace()
+df[].str.upper()
+df[].str.lower()
+df[].str.split()
+
+"""
 # 🎯 根据high salary过滤，获得各个国家高薪岗位分布图
 
 
