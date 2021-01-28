@@ -15,8 +15,22 @@ df[].str.upper()
 df[].str.lower()
 df[].str.split()
 
-"""
+
+# 🎯 对收入进行类似百分比的分段式截取
 # 🎯 根据high salary过滤，获得各个国家高薪岗位分布图
+
+df['SocialMedia'].value_counts(normalize=True)*100
+
+Reddit                      17.023343
+YouTube                     16.379076
+WhatsApp                    15.807051
+Facebook                    15.606902
+Twitter                     13.498822
+Instagram                    7.414996
+I don't use social media     6.577685
+LinkedIn                     5.330602
+
+"""
 
 
 # 200 - Check if there is ANY space from column names
