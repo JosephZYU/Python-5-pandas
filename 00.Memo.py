@@ -1,3 +1,6 @@
+# 🧭🧭🧭 df[row][col] | df.loc[row, col] | df.iloc[row, col]
+
+
 # 🧭 loc is better for human-readable analysis loc更适用于文本形式分析 -> .loc[row, col]
 # 🧭 If there is ONLY one filter dimension -> use df[filter] directly! 如果只有一个维度的过滤，直接使用df[filter]
 # 🧭 .loc is the ultimate way of re-setting indexes -> df.loc[row, col] -> df.loc[x, y]
@@ -5,6 +8,7 @@
 # 🧭 split -> Apply function -> Combine Results (https://youtu.be/txMdrV1Ut64?t=817)
 
 # 🧭 NOTE: replace / rename / map MUST come with {dict-format}!
+
 
 # Concatenate - https://youtu.be/txMdrV1Ut64?t=2131 ⭐️ -> NO.08
 
