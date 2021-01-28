@@ -6,6 +6,9 @@
 
 # 🧭 NOTE: replace / rename / map MUST come with {dict-format}!
 
+# Concatenate - https://youtu.be/txMdrV1Ut64?t=2131 ⭐️ -> NO.08
+
+
 df['Hobbyist'].replace({'Yes': 1, 'No': 0})
 
 """
