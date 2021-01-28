@@ -2,6 +2,8 @@
 # 🧭 If there is ONLY one filter dimension -> use df[filter] directly! 如果只有一个维度的过滤，直接使用df[filter]
 # 🧭 .loc is the ultimate way of re-setting indexes -> df.loc[row, col] -> df.loc[x, y]
 
+# 🧭 split -> Apply function -> Combine Results (https://youtu.be/txMdrV1Ut64?t=817)
+
 # 🧭 NOTE: replace / rename / map MUST come with {dict-format}!
 
 df['Hobbyist'].replace({'Yes': 1, 'No': 0})
