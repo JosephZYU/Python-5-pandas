@@ -80,7 +80,7 @@ LinkedIn                     5.330602
 
 """
 
-
+"""
 # 200 - Check if there is ANY space from column names
 count = 0
 
@@ -89,3 +89,4 @@ for i in df.columns.values.tolist():
         count += 1
 
 print(count)
+"""
