@@ -13,6 +13,20 @@
 # Concatenate - https://youtu.be/txMdrV1Ut64?t=2131 ⭐️ -> NO.08
 
 """
+
+so for example
+we can parse out the median salaries for
+these developer types what programming
+languages have the highest job
+satisfaction what the most preferred
+development environment is for the
+different development types and
+languages
+
+"""
+
+
+"""
 🧭 dtypes issues ⭐️ -> NO.09
 
     1. df.dtypes -> check the ENTIRE df for potential conflicts 整体考察所有col的对应数据类型
