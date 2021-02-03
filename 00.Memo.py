@@ -21,6 +21,22 @@
 
 # 🎯 how to deal with NaN with the entire DF 整体性处理所有的NaN
 
+# ⭐️ Missing valuves over 10% cut-off
+
+# df.isnull().mean().sort_values(ascending=False)#[:'LastHireDate'].index.tolist()
+
+"""
+# ⭐️ Mass create new rows into existing colums 批量添加新行并入已有数据
+
+for i in range(11, 21, 1):
+    df.loc[i] = {
+    'First_Name':'Joseph',
+    'Last_Name':'Yu',
+    'Email_Address':'josephyu@outlook.com'
+    }
+"""
+
+
 """
 
 so for example
