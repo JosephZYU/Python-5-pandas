@@ -34,6 +34,7 @@ df.drop(columns=[])  # BE CAUTIOUS when dropping any data!
 
 # df.select_dtypes(include=object).fillna('').applymap(str.upper)
 
+
 """
 # 🧭 Append can even append to BOTH rows and columns all at once - the ultimate way of adding data as NoSQL style
 # Append 可以同时以不定项形式，2维添加行列，非常适合不定项的NoSql模式
@@ -46,6 +47,14 @@ df = df.append({
     'last': 'Yu',
     'email': 'JosephYu@gmail.com',
     }, ignore_index=True)
+
+
+df.drop(
+    index= ,
+    columns= ,
+)
+
+
 """
 
 
