@@ -9,8 +9,17 @@
 
 # 🧭 NOTE: replace / rename / map MUST come with {dict-format}!
 
+# 🧭 Each column first of all a Serie, and a 1-dimensional DataFrame! 列即一维DF
+
+# 🧭 Recommended secure way to locate ONLY numeric columns 便捷稳健的筛选数据列的方法
+# 🧠 df.select_dtypes(include=np.number) -> include=np.number
+
+# 🧭 As long as it is a Data Frame, we can always apply filter 只要是DF就可以使用T/F进行过滤
+
 
 # Concatenate - https://youtu.be/txMdrV1Ut64?t=2131 ⭐️ -> NO.08
+
+# 🎯 how to deal with NaN with the entire DF 整体性处理所有的NaN
 
 """
 
