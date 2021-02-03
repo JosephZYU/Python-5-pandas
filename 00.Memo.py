@@ -25,6 +25,10 @@
 
 # df.isnull().mean().sort_values(ascending=False)#[:'LastHireDate'].index.tolist()
 
+# 🧠 ⭐️ fillna("")
+
+# df.select_dtypes(include=object).fillna('').applymap(str.upper)
+
 """
 # ⭐️ Mass create new rows into existing colums 批量添加新行并入已有数据
 
