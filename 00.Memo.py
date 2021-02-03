@@ -29,6 +29,23 @@
 
 # df.select_dtypes(include=object).fillna('').applymap(str.upper)
 
+
+"""
+
+
+# 🧭 Replace is in most cases the best solution -> it gives you the option of trila and then use inplace=True to let it happen
+# replace 是通常境况下最合适的选择！现实验，如何可行再应用，而不直接影响原始数据！
+
+# 🧭 Replace 1 value ONLY -> replace(a, b)
+# 🧭 Replace 2 or more values -> replace({dict})
+
+df['first'].replace({
+    'Corey': 'Mark_1',
+    'Jane': 'Mark_2',
+    'John': 'Mark_3'}, 
+    inplace=True)
+"""
+
 """
 # ⭐️ Mass create new rows into existing colums 批量添加新行并入已有数据
 
