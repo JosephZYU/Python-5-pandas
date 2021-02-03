@@ -7,7 +7,12 @@
 
 # 🧭 split -> Apply function -> Combine Results (https://youtu.be/txMdrV1Ut64?t=817)
 
+"""
 # 🧭 NOTE: replace / rename / map MUST come with {dict-format}!
+
+df.rename(columns={})
+df.drop(columns=[])  # BE CAUTIOUS when dropping any data!
+"""
 
 # 🧭 Each column first of all a Serie, and a 1-dimensional DataFrame! 列即一维DF
 
