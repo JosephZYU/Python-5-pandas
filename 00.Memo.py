@@ -26,6 +26,10 @@ df.drop(columns=[])  # BE CAUTIOUS when dropping any data!
 # 2 of 2: deal with Fake Non-Null cells: 'NA', 'n/a', 'missing', ... (pretending in string format) 处理伪装成非空的干扰值
 
 
+# 🧭 mean() will automatically ignore ALL na values mean 自动忽略素有的空值 😎
+# 🧭 median() will get the mean value given EVEN number from the list 偶数个数字时，会得出正中间两书的平均数
+
+
 # Concatenate - https://youtu.be/txMdrV1Ut64?t=2131 ⭐️ -> NO.08
 
 # 🎯 how to deal with NaN with the entire DF 整体性处理所有的NaN
@@ -41,6 +45,7 @@ df.drop(columns=[])  # BE CAUTIOUS when dropping any data!
 # 🧠 pd.concat([df1, df2], axis=1) ⭐
 
 # pd.concat([new_df, stat_df], axis=1)
+
 
 """
 ⭐️ put it all together:
@@ -86,8 +91,6 @@ df.drop(
 
 
 """
-
-
 # 🧭 Replace is in most cases the best solution -> it gives you the option of trila and then use inplace=True to let it happen
 # replace 是通常境况下最合适的选择！现实验，如何可行再应用，而不直接影响原始数据！
 
@@ -99,6 +102,16 @@ df['first'].replace({
     'Jane': 'Mark_2',
     'John': 'Mark_3'}, 
     inplace=True)
+
+df['YearsCode'].replace({
+                        'Less than 1 year': None,
+                        'More than 50 years': None,
+                        }).astype(float).describe()
+
+df['YearsCode'].replace({
+                        'Less than 1 year': 0,
+                        'More than 50 years': 51,
+                        }).astype(float).describe()
 """
 
 """
