@@ -34,6 +34,30 @@ df.drop(columns=[])  # BE CAUTIOUS when dropping any data!
 
 # df.select_dtypes(include=object).fillna('').applymap(str.upper)
 
+# 🧠 pd.concat([df1, df2], axis=1) ⭐
+
+# pd.concat([new_df, stat_df], axis=1)
+
+"""
+⭐️ put it all together:
+
+def python_stats(num_of_country):
+    # prepare two lists for 
+    li_country = df['Country'].value_counts().head(num_of_country).index.tolist()
+    li_pct = []
+
+    for country in li_country:
+        li_pct.append(df.groupby('Country')['Knows_Python'].value_counts(normalize=True).loc[country, True])
+
+    pct_df = pd.DataFrame({
+    'Region': li_country,
+    'Pct_Python': li_pct,
+    })
+
+    return pct_df
+
+"""
+
 
 """
 # 🧭 Append can even append to BOTH rows and columns all at once - the ultimate way of adding data as NoSQL style
