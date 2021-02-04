@@ -21,6 +21,10 @@ df.drop(columns=[])  # BE CAUTIOUS when dropping any data!
 
 # 🧭 As long as it is a Data Frame, we can always apply filter 只要是DF就可以使用T/F进行过滤
 
+# 🧭🧭 Two major scenarios of null (na) values
+# 1 of 2: deal with True Null cells: np.nan or None 处理真空值
+# 2 of 2: deal with Fake Non-Null cells: 'NA', 'n/a', 'missing', ... (pretending in string format) 处理伪装成非空的干扰值
+
 
 # Concatenate - https://youtu.be/txMdrV1Ut64?t=2131 ⭐️ -> NO.08
 
@@ -77,7 +81,6 @@ df.drop(
     index= ,
     columns= ,
 )
-
 
 """
 
