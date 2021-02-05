@@ -59,7 +59,7 @@ Method 2 of 2: ⭐️⭐️⭐️
 
 format = '%Y-%m-%d %I-%p'
 date_parser = lambda x: pd.datetime.strptime(x, format)
-df = pd.read_csv(dt_source, parse_dates=['Date'], date_parser=date_parser)
+df = pd.read_csv(dt_source, parse_dates=['Date'], date_parser=date_parser, index_col='Date')
 """
 
 """
