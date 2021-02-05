@@ -46,6 +46,21 @@ df.drop(columns=[])  # BE CAUTIOUS when dropping any data!
 
 # pd.concat([new_df, stat_df], axis=1)
 
+"""
+Ultimate Guide to transform string into datetime64
+
+Method 1 of 2: ⭐️
+
+format = '%Y-%m-%d %I-%p'
+pd.datetime.strptime(x, format)
+
+
+Method 2 of 2: ⭐️⭐️⭐️
+
+format = '%Y-%m-%d %I-%p'
+date_parser = lambda x: pd.datetime.strptime(x, format)
+df = pd.read_csv(dt_source, parse_dates=['Date'], date_parser=date_parser)
+"""
 
 """
 ⭐️ put it all together:
